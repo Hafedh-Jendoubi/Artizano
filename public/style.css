@@ -554,96 +554,12 @@ video {
   display: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.relative {
-  position: relative;
-}
-
 .left-0 {
   left: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.top-\[105px\] {
-  top: 105px;
-}
-
-.top-\[-100px\] {
-  top: -100px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .ml-auto {
   margin-left: auto;
-}
-
-.ml-\[20px\] {
-  margin-left: 20px;
-}
-
-.mr-\[87px\] {
-  margin-right: 87px;
-}
-
-.mt-\[100px\] {
-  margin-top: 100px;
-}
-
-.mt-\[90px\] {
-  margin-top: 90px;
-}
-
-.mt-\[97px\] {
-  margin-top: 97px;
-}
-
-.mt-\[99px\] {
-  margin-top: 99px;
-}
-
-.mt-\[px\] {
-  margin-top: px;
-}
-
-.mt-\[40px\] {
-  margin-top: 40px;
-}
-
-.mt-\[70px\] {
-  margin-top: 70px;
-}
-
-.mt-\[95px\] {
-  margin-top: 95px;
-}
-
-.mt-\[87px\] {
-  margin-top: 87px;
-}
-
-.mt-\[82px\] {
-  margin-top: 82px;
-}
-
-.mt-\[77px\] {
-  margin-top: 77px;
-}
-
-.mt-\[75px\] {
-  margin-top: 75px;
-}
-
-.mt-\[73px\] {
-  margin-top: 73px;
 }
 
 .flex {
@@ -652,10 +568,6 @@ video {
 
 .h-\[105px\] {
   height: 105px;
-}
-
-.h-\[80\] {
-  height: 80;
 }
 
 .h-\[67px\] {
@@ -670,28 +582,16 @@ video {
   height: 87px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.w-\[80px\] {
+  width: 80px;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-\[80\] {
-  width: 80;
-}
-
-.w-\[40\] {
-  width: 40;
-}
-
-.w-\[80px\] {
-  width: 80px;
-}
-
-.flex-col {
-  flex-direction: column;
+.w-screen {
+  width: 100vw;
 }
 
 .items-center {
@@ -702,32 +602,26 @@ video {
   justify-content: center;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
   margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .bg-\[\#AE6565\] {
   --tw-bg-opacity: 1;
   background-color: rgb(174 101 101 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-custom-bg {
@@ -742,24 +636,12 @@ video {
   background-repeat: repeat;
 }
 
-.pl-\[20px\] {
-  padding-left: 20px;
-}
-
-.pl-\[200px\] {
-  padding-left: 200px;
-}
-
-.pr-\[87px\] {
-  padding-right: 87px;
-}
-
 .pl-\[68px\] {
   padding-left: 68px;
 }
 
-.pt-\[100px\] {
-  padding-top: 100px;
+.pr-\[87px\] {
+  padding-right: 87px;
 }
 
 .text-navSize {
@@ -779,78 +661,6 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 .hover\:text-gray-200:hover {
