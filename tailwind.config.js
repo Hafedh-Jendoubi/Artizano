@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         'arial': ["Arial"],
+        'inter': ["Inter"],
       },
       spacing: {
         '43': '43px',
