@@ -1,13 +1,28 @@
+import { useState } from "react";
+
 function Navbar() {
-    return(
-        <nav className="h-[87px] bg-[#AE6565] w-full left-0 flex justify-center items-center">
-            <ul className="flex text-navSize font-bold space-x-12 text-white">
-                <li><a href="#" className="hover:text-gray-200">ACCEUIL</a></li>
-                <li><a href="#" className="hover:text-gray-200">SUIVIE COMMANDE</a></li>
-                <li><a href="#" className="hover:text-gray-200">RECOMMENDATION LOOK</a></li>
-                <li><a href="#" className="hover:text-gray-200">EVENEMENTS CULTURELS</a></li>
-                <li><a href="#" className="hover:text-gray-200">PODCAST</a></li>
-                <li><a href="#" className="hover:text-gray-200">CITATION</a></li>
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    return (
+        <nav className="bg-[#AE6565] w-full flex flex-col md:flex-row md:justify-center items-center px-4 py-2">
+            {/* Bouton Menu Hamburger pour Mobile */}
+            <button 
+                className="md:hidden text-white text-2xl focus:outline-none"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
+                ☰
+            </button>
+
+            {/* Menu en version Desktop et Mobile */}
+            <ul className={`${
+                menuOpen ? "block" : "hidden"
+            } md:flex flex-wrap justify-center text-sm md:text-navSize font-bold text-white text-center space-y-2 md:space-y-0 md:space-x-6 mt-2 md:mt-0`}>
+                <li><a href="#" className="hover:text-gray-200 block px-3">ACCEUIL</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">SUIVIE COMMANDE</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">RECOMMENDATION LOOK</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">EVENEMENTS CULTURELS</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">PODCAST</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">CITATION</a></li>
             </ul>
         </nav>
     );
