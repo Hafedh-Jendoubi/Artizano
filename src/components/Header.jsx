@@ -1,13 +1,46 @@
 function Header() {
     return (
         <header className="w-screen bg-white">
-            <div className="h-[105px] w-full flex items-center">
-            <img src="images/logo.png" alt="logo" className="h-[67px] pl-[68px]" />
-            <div className="ml-auto flex space-x-6 pr-[87px]">
-                <img src="images/item1.png" alt="item1" className="w-[80px] h-[80px]" />
-                <img src="images/item2.png" alt="item2" className="w-[80px] h-[80px]" />
-                <img src="images/item3.png" alt="item3" className="w-[80px] h-[80px]" />
-            </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+                <a href="#" className="-m-1.5 p-1.5">
+                    <img
+                        className="h-8 w-auto"
+                        src="../public/images/logo.png"
+                        alt="Your Company"
+                        style={{ width: '120px', height: '70px' }}
+                    />
+                </a>
+                <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-4">
+                        <div className="rounded-full bg-notification_yellow p-1">
+                            <div className="rounded-full bg-white w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center">
+                                <img
+                                    src="../public/images/darbouka.png"
+                                    alt="Darbouka"
+                                    className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                                />
+                            </div>
+                        </div>
+                        <div className="rounded-full bg-notification_yellow p-1">
+                            <div className="rounded-full bg-white w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center">
+                                <img
+                                    src="../public/images/koffa.png"
+                                    alt="Koffa"
+                                    className="w-8 h-10 md:w-10 md:h-12 lg:w-12 lg:h-14"
+                                />
+                            </div>
+                        </div>
+                        <div className="rounded-full bg-notification_yellow p-1">
+                            <div className="rounded-full bg-white w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center">
+                                <img
+                                    src="../public/images/user.png"
+                                    alt="User"
+                                    className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
     );

@@ -1,15 +1,15 @@
 function Navbar() {
-    return(
-        <nav className="h-[87px] bg-[#AE6565] w-full left-0 flex justify-center items-center">
-            <ul className="flex text-navSize font-bold space-x-12 text-white">
-                <li><a href="#" className="hover:text-gray-200">ACCEUIL</a></li>
-                <li><a href="#" className="hover:text-gray-200">SUIVIE COMMANDE</a></li>
-                <li><a href="#" className="hover:text-gray-200">RECOMMENDATION LOOK</a></li>
-                <li><a href="#" className="hover:text-gray-200">EVENEMENTS CULTURELS</a></li>
-                <li><a href="#" className="hover:text-gray-200">PODCAST</a></li>
-                <li><a href="#" className="hover:text-gray-200">CITATION</a></li>
-            </ul>
-        </nav>
+    return (
+        <div className="bg-Rosy py-4 md:py-6">
+            <nav className="mx-8 md:mx-16 lg:mx-24 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6">
+                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">ACCEUIL</a>
+                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">SUIVIE COMMANDE</a>
+                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">RECOMMANDATION LOOK</a>
+                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">ÉVÉNEMENTS CULTURELS</a>
+                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">PODCAST</a>
+                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">CITATION</a>
+            </nav>
+        </div>
     );
 }
 
