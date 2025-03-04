@@ -22,6 +22,7 @@ export default {
       },
       fontFamily: {
         'arial': ["Arial"],
+        'inter': ["Inter"],
       },
       spacing: {
         '43': '43px',
@@ -48,6 +49,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
 

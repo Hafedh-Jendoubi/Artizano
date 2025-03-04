@@ -1,15 +1,30 @@
+import { useState } from "react";
+import { Link } from "react-router-dom"; 
 function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
-        <div className="bg-Rosy py-4 md:py-6">
-            <nav className="mx-8 md:mx-16 lg:mx-24 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6">
-                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">ACCEUIL</a>
-                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">SUIVIE COMMANDE</a>
-                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">RECOMMANDATION LOOK</a>
-                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">ÉVÉNEMENTS CULTURELS</a>
-                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">PODCAST</a>
-                <a href="#" className="text-white font-bold text-sm md:text-base lg:text-navSize p-2 md:p-3 lg:p-4">CITATION</a>
-            </nav>
-        </div>
+        <nav className="bg-[#AE6565] w-full flex flex-col md:flex-row md:justify-center items-center px-4 py-6">
+            {/* Bouton Menu Hamburger pour Mobile */}
+            <button 
+                className="md:hidden text-white text-2xl focus:outline-none"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
+                ☰
+            </button>
+
+            {/* Menu en version Desktop et Mobile */}
+            <ul className={`${
+                menuOpen ? "block" : "hidden"
+            } md:flex flex-wrap justify-center text-sm md:text-navSize font-bold text-white text-center space-y-2 md:space-y-0 md:space-x-6 mt-2 md:mt-0`}>
+                <li><Link to="/" className="hover:text-gray-200 block px-3">ACCEUIL</Link></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">SUIVIE COMMANDE</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">RECOMMENDATION LOOK</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">EVENEMENTS CULTURELS</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">PODCAST</a></li>
+                <li><a href="#" className="hover:text-gray-200 block px-3">CITATION</a></li>
+            </ul>
+        </nav>
     );
 }
 
