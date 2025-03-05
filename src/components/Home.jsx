@@ -11,7 +11,7 @@ const looks = [
   { id: 3, image: look3, title: "Jebba", price: "40DT" }
 ];
 
-const RecommendationLook = () => {
+const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("Pertinence");
 
@@ -109,4 +109,4 @@ const RecommendationLook = () => {
   );
 };
 
-export default RecommendationLook;
+export default Home;
