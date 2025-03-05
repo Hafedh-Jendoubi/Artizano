@@ -10,14 +10,15 @@ import Footer from './components/footer';
 import WorkshopDetails from './components/WokshopDetails';
 import RecommendationLook from './components/RecommandationLook';
 import SponsorshipPage from './components/SponsorshipPage';
+import Home  from './components/Home';
 function App() {
   return (
     <Router>
       <Header />
       <Navbar />
-     
+      
       <Routes>
-        <Route path='/' element={<h1>Home</h1>} /> 
+        <Route path='/' element={<Home/>} /> 
         <Route path='/GetRDV' element={<GetRDV />} />
         <Route path="/Card" element={<Card />} />
         <Route path="/exchange-service" element={<ExchangeService />} />
