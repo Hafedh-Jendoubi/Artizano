@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaShoppingCart, FaCog } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -54,7 +54,6 @@ function Header() {
                                 />
                             </div>
                         </div>
-                        {/* User Icon Container */}
                         <div 
                             className={`rounded-full p-1 relative ${
                                 isDropdownOpen ? "bg-Rosy" : "bg-notification_yellow"
@@ -71,7 +70,6 @@ function Header() {
                                     className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
                                 />
                             </div>
-                            {/* Dropdown Menu */}
                             {isDropdownOpen && (
                                 <div className="absolute right-0 mt-2 w-48 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 border border-black">
                                     <div className="py-1">

@@ -26,6 +26,7 @@ function App() {
         <Route path="/RecommandationLook" element={<RecommendationLook />} />
         <Route path="/SponsorshipPage" element={<SponsorshipPage />} />
         <Route path="/Purchases" element={<Purchases />} />
+        <Route path="/WorkshpDetails" element={<WorkshopDetails />} />
 
       </Routes>
       <Footer/>

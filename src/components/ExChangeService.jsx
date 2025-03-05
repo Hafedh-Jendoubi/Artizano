@@ -1,12 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation to access state
+import { useLocation } from "react-router-dom"; 
 import { FaSearch } from "react-icons/fa";
 
 function ExchangeService() {
   const location = useLocation();
-  const { look } = location.state || {}; // Destructure the passed data
+  const { look } = location.state || {}; 
 
-  // If no data is passed, show a fallback message
+
   if (!look) {
     return (
       <div className="bg-white rounded-lg shadow-md p-6 sm:mx-10 lg:mx-20 mt-20 mb-10">
@@ -22,8 +22,8 @@ function ExchangeService() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
         <div>
           <img
-            src={look.image} // Use the passed image
-            alt={look.title} // Use the passed title
+            src={look.image} 
+            alt={look.title}
             className="rounded-lg w-full h-auto"
           />
         </div>
@@ -36,10 +36,10 @@ function ExchangeService() {
               <p className="pb-4">Somme à payer après l'échange:</p>
             </div>
             <div className="flex flex-col justify-end">
-              <p className="pb-4">{look.title}</p> {/* Use the passed title */}
-              <p className="pb-4">BC03F128</p> {/* Static data */}
-              <p className="pb-4">{look.price}</p> {/* Use the passed price */}
-              <p className="pb-4">30DT</p> {/* Static data */}
+              <p className="pb-4">{look.title}</p>
+              <p className="pb-4">BC03F128</p> 
+              <p className="pb-4">{look.price}</p> 
+              <p className="pb-4">30DT</p>
             </div>
           </div>
           <div className="flex justify-end mt-4">
