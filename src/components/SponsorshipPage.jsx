@@ -1,21 +1,20 @@
 import React from "react";
-import productImage from "../assets/product.png"; // Image du produit
-import userIcon from "../assets/user.png"; // Icône utilisateur
-import { FaPaperPlane } from "react-icons/fa"; // Icône pour l'envoi
+import productImage from "../assets/product.png"; 
+import userIcon from "../assets/user.png"; 
+import { FaPaperPlane } from "react-icons/fa";
 
 const SponsorshipPage = () => {
   return (
     <div className="min-h-screen bg-[url('/src/assets/background.png')] bg-cover bg-center bg-fixed flex flex-col items-center">
       
-      {/* ✅ Section Produit à Sponsoriser */}
+  
       <div className="bg-white p-8 rounded-lg shadow-md w-[1287px] h-[763px] mt-16">
         <h2 className="text-[30px] font-bold text-[#985F5A] font-['Inter'] mb-6">
           Produit à sponsoriser
         </h2>
 
-        {/* 📌 Contenu principal - Image & Détails */}
         <div className="flex flex-row gap-10">
-          {/* ✅ Image du Produit */}
+         
           <div className="w-[548px] h-[612px] flex-shrink-0">
             <img
               src={productImage}
@@ -24,7 +23,7 @@ const SponsorshipPage = () => {
             />
           </div>
 
-          {/* ✅ Détails du Produit */}
+         
           <div className="flex flex-col justify-start flex-1">
             <h3 className="text-md font-bold text-[#985F5A] mb-4">
               Titre Projet 
@@ -36,7 +35,6 @@ const SponsorshipPage = () => {
               <span className="text-gray-700 font-normal ml-2">200DT</span>
             </p>
 
-            {/* ✅ Ajout du mot "Description" */}
             <p className="text-md font-bold text-[#985F5A] mb-4">Description</p>
 
             <p className="text-gray-700 text-sm leading-relaxed mb-6">
@@ -45,7 +43,6 @@ const SponsorshipPage = () => {
               Un choix raffiné pour une touche de tradition et de modernité.
             </p>
 
-            {/* ✅ Bouton "Donner avis" avec position correcte */}
             <div className="flex justify-end mt-6">
               <button className="bg-[#985F5A] text-white rounded-full hover:bg-opacity-80 transition" 
                 style={{ width: "142px", height: "53px" }}>
@@ -56,7 +53,6 @@ const SponsorshipPage = () => {
         </div>
       </div>
 
-      {/* ✅ Section Options de soutien */}
       <div className="container mx-auto px-6 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[
@@ -86,26 +82,24 @@ const SponsorshipPage = () => {
         </div>
       </div>
 
-      {/* ✅ Section Commentaires */}
+
       <div className="bg-white p-6 rounded-lg shadow-md w-[1290px] h-[838px] mx-auto mt-10 mb-20">
 
-        {/* 📌 Commentaires Existant */}
         <div className="mt-4 space-y-6">
           {[
             { name: "Wiem ben mansour", comment: "J’ai été invitée à l’atelier et j’ai adoré découvrir la fabrication des vêtements.", date: "04/12/2024" },
             { name: "Wala Ammar", comment: "J’ai bien reçu mon produit, il est magnifique ! Merci pour cette belle initiative.", date: "04/12/2024" },
           ].map((item, index) => (
             <div key={index} className="flex items-center w-full">
-              {/* ✅ Icône Utilisateur À GAUCHE */}
+           
               <img src={userIcon} alt="User" className="w-12 h-12 rounded-full flex-shrink-0" />
 
-              {/* ✅ Nom & Date JUSTE À CÔTÉ DE L’ICÔNE */}
+            
               <div className="ml-2 flex-shrink-0 w-[200px]">
                 <p className="text-sm font-semibold text-gray-800">{item.name}</p>
                 <p className="text-xs text-gray-500">{item.date}</p>
               </div>
 
-              {/* ✅ Boîte de commentaire ALIGNÉE À DROITE */}
               <div className="ml-6 w-[637px] h-[60px] bg-white border border-[#985F5A] rounded-full p-3 flex items-center">
                 <p className="text-gray-700">{item.comment}</p>
               </div>
@@ -113,12 +107,12 @@ const SponsorshipPage = () => {
           ))}
         </div>
 
-        {/* ✅ Ajouter un Commentaire */}
+    
         <div className="mt-10 flex items-center w-full">
-          {/* ✅ Icône Utilisateur À GAUCHE */}
+       
           <img src={userIcon} alt="User" className="w-12 h-12 rounded-full flex-shrink-0" />
 
-          {/* ✅ Input de commentaire sans bordure */}
+       
           <div className="ml-2 w-[637px] h-[60px] bg-white border border-[#985F5A] rounded-full p-3 flex items-center">
             <input
               type="text"
@@ -127,7 +121,6 @@ const SponsorshipPage = () => {
             />
           </div>
 
-          {/* ✅ Bouton Envoyer À L’INTÉRIEUR DU BOX */}
           <button className="ml-[-50px] bg-[#985F5A] text-white rounded-full flex items-center justify-center hover:bg-opacity-80 transition"
             style={{ width: "53px", height: "53px" }}>
             <FaPaperPlane className="text-white text-lg" />

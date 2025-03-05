@@ -1,24 +1,14 @@
+import { FaSearch } from "react-icons/fa";
+
 function Card() {
     return (
         <main className="md:px-20">
-            <div className="relative max-w-[526px] mt-10 ml-6 md:ml-0">
-                <svg
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#AE6565]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 21l-4.35-4.35M16.65 10.5a6.15 6.15 0 1 1-12.3 0 6.15 6.15 0 0 1 12.3 0z"
-                    />
-                </svg>
+            <div className="relative w-[624px] h-[54px] mt-7">
+                <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" />
                 <input
-                    className="bg-white border-[4px] border-[#AE6565] w-full pl-10 rounded-full placeholder:text-[#AE6565] placeholder:italic placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#AE6565]"
-                    placeholder="Rechercher un article"
+                    type="text"
+                    placeholder="Jebba"
+                    className="w-full h-full pl-10 pr-4 border border-[#985F5A] rounded-full focus:ring-2 focus:ring-[#985F5A] focus:outline-none shadow-md"                    
                 />
             </div>
 
@@ -59,10 +49,10 @@ function Card() {
                                                 Cet article n'est pas éligible pour PayPal
                                             </p>
                                             <div className="flex gap-2 mt-2">
-                                                <button className="bg-[#a15c5c] text-white text-xs px-2 py-1 rounded-xl">
+                                                <button className="bg-[#a15c5c] text-white text-xs px-2 py-1 rounded-xl hover:bg-opacity-80">
                                                     Modifier
                                                 </button>
-                                                <button className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-xl">
+                                                <button className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-xl hover:bg-[#985F5A] hover:text-white">
                                                     Supprimer
                                                 </button>
                                             </div>
@@ -82,7 +72,7 @@ function Card() {
                     </div>
                     <a
                         href="#"
-                        className="mt-3 ml-5 pb-2 text-[#AE6565] cursor-pointer"
+                        className="mt-3 ml-5 pb-2 text-[#AE6565] cursor-pointer hover:underline"
                     >
                         &lt; Continuer vos achats
                     </a>
@@ -112,7 +102,7 @@ function Card() {
                             A partir de 83TND/mois soit 0% TAEG avec affirmation. Verifiez
                             votre pouvoir d'achat.
                         </p>
-                        <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-full mt-4 w-full">
+                        <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-full mt-4 w-full hover:bg-opacity-80">
                             Confirmer
                         </button>
                     </div>
@@ -127,7 +117,7 @@ function Card() {
                                         className="border border-gray-300 rounded-l-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#AE6565]"
                                         placeholder="Promo Code"
                                     />
-                                    <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-r-full">
+                                    <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-r-full hover:bg-opacity-80">
                                         &gt;
                                     </button>
                                 </div>
@@ -136,7 +126,7 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <div className="h-auto w-auto ml-6 md:ml-0 bg-white rounded-[15px] shadow-lg p-6 max-w-[810px]">
+            <div className="h-auto w-auto ml-6 md:ml-0 bg-white rounded-[15px] shadow-lg p-6 max-w-[810px] mb-12">
                 <h2 className="text-[30px] text-[#5B1616] font-bold mb-5">
                     Produits recommandés
                 </h2>
@@ -146,33 +136,33 @@ function Card() {
                         <img
                             src="images/product.png"
                             alt="Jebba"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Jebba 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Jebba 60DT</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-4 w-[150px] md:w-[200px]">
                         <img
                             src="images/product.png"
                             alt="Jebba"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Jebba 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Jebba 60DT</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-4 w-[150px] md:w-[200px]">
                         <img
                             src="images/product.png"
                             alt="Koffa"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Koffa 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Koffa 60DT</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-4 w-[150px] md:w-[200px]">
                         <img
                             src="images/product.png"
                             alt="Jebba"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Jebba 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Jebba 60DT</p>
                     </div>
                 </div>
             </div>

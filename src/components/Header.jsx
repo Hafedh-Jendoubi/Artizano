@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { FaShoppingCart, FaCog } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { FaShoppingCart, FaCog , FaPhone,FaReceipt} from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -54,7 +55,6 @@ function Header() {
                                 />
                             </div>
                         </div>
-                        {/* User Icon Container */}
                         <div 
                             className={`rounded-full p-1 relative ${
                                 isDropdownOpen ? "bg-Rosy" : "bg-notification_yellow"
@@ -71,18 +71,34 @@ function Header() {
                                     className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
                                 />
                             </div>
-                            {/* Dropdown Menu */}
                             {isDropdownOpen && (
                                 <div className="absolute right-0 mt-2 w-48 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 border border-black">
                                     <div className="py-1">
                                         <Link 
-                                            to="/exchange-service" 
+                                            to="/Purchases" 
+                                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
+                                        >
+                                            <FaReceipt className="mr-2" />
+                                            Mes achats
+                                        </Link>
+                                        <Link 
+                                            to="/Card" 
                                             className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                             onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
                                         >
                                             <FaShoppingCart className="mr-2" />
-                                            Mes achats
+                                            Panier
                                         </Link>
+                                        <Link 
+                                            to="/GetRDV" 
+                                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
+                                        >
+                                            <FaPhone className="mr-2" />
+                                            Prendre Rendez Vous
+                                        </Link>
+
                                         <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                             <FaCog className="mr-2" />
                                             Paramètres
