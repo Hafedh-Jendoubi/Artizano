@@ -1,24 +1,14 @@
+import { FaSearch } from "react-icons/fa";
+
 function Card() {
     return (
         <main className="md:px-20">
-            <div className="relative max-w-[526px] mt-10 ml-6 md:ml-0">
-                <svg
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#AE6565]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 21l-4.35-4.35M16.65 10.5a6.15 6.15 0 1 1-12.3 0 6.15 6.15 0 0 1 12.3 0z"
-                    />
-                </svg>
+            <div className="relative w-[624px] h-[54px] mt-7">
+                <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" />
                 <input
-                    className="bg-white border-[4px] border-[#AE6565] w-full pl-10 rounded-full placeholder:text-[#AE6565] placeholder:italic placeholder:font-semibold focus:outline-none focus:ring-2 focus:ring-[#AE6565]"
-                    placeholder="Rechercher un article"
+                    type="text"
+                    placeholder="Jebba"
+                    className="w-full h-full pl-10 pr-4 border border-[#985F5A] rounded-full focus:ring-2 focus:ring-[#985F5A] focus:outline-none shadow-md"                    
                 />
             </div>
 

@@ -1010,6 +1010,10 @@ select {
   margin-top: -60px;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
