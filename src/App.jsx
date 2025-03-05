@@ -8,6 +8,8 @@ import GetRDV from './components/GetRDV';
 import ExchangeService from './components/exChangeService';
 import Footer from './components/footer';
 import WorkshopDetails from './components/WokshopDetails';
+import RecommendationLook from './components/RecommandationLook';
+import SponsorshipPage from './components/SponsorshipPage';
 function App() {
   return (
     <Router>
@@ -19,6 +21,10 @@ function App() {
         <Route path='/GetRDV' element={<GetRDV />} />
         <Route path="/Card" element={<Card />} />
         <Route path="/exchange-service" element={<ExchangeService />} />
+        <Route path="/RecommandationLook" element={<RecommendationLook />} />
+        <Route path="/SponsorshipPage" element={<SponsorshipPage />} />
+
+
       </Routes>
       <Footer/>
     </Router>
