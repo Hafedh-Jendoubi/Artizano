@@ -30,8 +30,6 @@ function App() {
         <Route path="/WorkshpDetails" element={<WorkshopDetails />} />
         <Route path="/Follow" element={<Follow />} />
         <Route path="/avis" element={<Review />} />
-
-
       </Routes>
       <Footer/>
     </Router>
