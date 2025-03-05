@@ -4,7 +4,7 @@ import look1 from "../assets/j1.png";
 import look2 from "../assets/c.png";
 import look3 from "../assets/j2.png";
 import SwipeGift from "./SwipeGift";
-
+import { useNavigate } from "react-router-dom";
 const looks = [
   { id: 1, image: look1, title: "Jebba", price: "60DT" },
   { id: 2, image: look2, title: "Jebba", price: "15DT" },
@@ -97,9 +97,13 @@ const RecommendationLook = () => {
                 <button className="bg-[#985F5A] text-white py-1 rounded-full w-[142px] h-[53px] text-xs hover:bg-opacity-80 transition">
                   Ajouter au panier
                 </button>
-                <button className="border border-[#985F5A] text-[#985F5A] py-1 rounded-full w-[142px] h-[53px] text-xs hover:bg-[#985F5A] hover:text-white transition">
-                  Voir Détails
-                </button>
+                <button 
+    onClick={() => window.location.href = "/avis"}  
+    className="border border-[#985F5A] text-[#985F5A] py-2 px-4 rounded-full w-[142px] h-[53px] flex justify-center items-center text-sm font-bold hover:bg-[#985F5A] hover:text-white transition-all"
+>
+    Voir Détails
+</button>
+
               </div>
             </div>
           ))}

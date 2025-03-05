@@ -1,10 +1,14 @@
 import { useState } from "react";
+import Notification from "./Notification";
 
 function Review() {
     const [rating, setRating] = useState(4); // Note par défaut 4 étoiles
 
     return (
+<div>
+<Notification />
         <div className="max-w-5xl mx-auto mt-10 pt-[40px] px-4">
+            
             {/* Grand cadre blanc (Image + Description) */}
             <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
                 
@@ -62,6 +66,7 @@ function Review() {
 </div>
 
 
+        </div>
         </div>
     );
 }

@@ -28,6 +28,8 @@ function App() {
         <Route path="/SponsorshipPage" element={<SponsorshipPage />} />
         <Route path="/Purchases" element={<Purchases />} />
         <Route path="/Follow" element={<Follow />} />
+        <Route path="/avis" element={<Review />} />
+
       </Routes>
       <Footer/>
     </Router>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { FaShoppingCart, FaCog } from "react-icons/fa";
+import { FaShoppingCart, FaCog,FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Header() {
@@ -91,6 +91,15 @@ function Header() {
                                             <FaShoppingCart className="mr-2" />
                                             Panier
                                         </Link>
+                                        <Link 
+                                            to="/GetRDV" 
+                                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
+                                        >
+                                            <FaPhone className="mr-2" />
+                                            Prendre Rendez Vous
+                                        </Link>
+
                                         <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                             <FaCog className="mr-2" />
                                             Paramètres
