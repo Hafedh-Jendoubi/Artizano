@@ -76,7 +76,7 @@ function Header() {
                                 <div className="absolute right-0 mt-2 w-48 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 border border-black">
                                     <div className="py-1">
                                         <Link 
-                                            to="/exchange-service" 
+                                            to="/Purchases" 
                                             className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                             onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
                                         >

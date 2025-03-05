@@ -11,6 +11,7 @@ import WorkshopDetails from './components/WokshopDetails';
 import RecommendationLook from './components/RecommandationLook';
 import SponsorshipPage from './components/SponsorshipPage';
 import Home  from './components/Home';
+import Purchases from './components/Purchases';
 function App() {
   return (
     <Router>
@@ -24,7 +25,7 @@ function App() {
         <Route path="/exchange-service" element={<ExchangeService />} />
         <Route path="/RecommandationLook" element={<RecommendationLook />} />
         <Route path="/SponsorshipPage" element={<SponsorshipPage />} />
-
+        <Route path="/Purchases" element={<Purchases />} />
 
       </Routes>
       <Footer/>

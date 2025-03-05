@@ -2093,6 +2093,11 @@ select {
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2205,6 +2210,11 @@ html, body {
 .placeholder\:text-\[\#AE6565\]::placeholder {
   --tw-text-opacity: 1;
   color: rgb(174 101 101 / var(--tw-text-opacity, 1));
+}
+
+.hover\:border-Rosy:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(174 101 101 / var(--tw-border-opacity, 1));
 }
 
 .hover\:bg-Rosy:hover {
