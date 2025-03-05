@@ -59,10 +59,10 @@ function Card() {
                                                 Cet article n'est pas éligible pour PayPal
                                             </p>
                                             <div className="flex gap-2 mt-2">
-                                                <button className="bg-[#a15c5c] text-white text-xs px-2 py-1 rounded-xl">
+                                                <button className="bg-[#a15c5c] text-white text-xs px-2 py-1 rounded-xl hover:bg-opacity-80">
                                                     Modifier
                                                 </button>
-                                                <button className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-xl">
+                                                <button className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-xl hover:bg-[#985F5A] hover:text-white">
                                                     Supprimer
                                                 </button>
                                             </div>
@@ -82,7 +82,7 @@ function Card() {
                     </div>
                     <a
                         href="#"
-                        className="mt-3 ml-5 pb-2 text-[#AE6565] cursor-pointer"
+                        className="mt-3 ml-5 pb-2 text-[#AE6565] cursor-pointer hover:underline"
                     >
                         &lt; Continuer vos achats
                     </a>
@@ -112,7 +112,7 @@ function Card() {
                             A partir de 83TND/mois soit 0% TAEG avec affirmation. Verifiez
                             votre pouvoir d'achat.
                         </p>
-                        <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-full mt-4 w-full">
+                        <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-full mt-4 w-full hover:bg-opacity-80">
                             Confirmer
                         </button>
                     </div>
@@ -127,7 +127,7 @@ function Card() {
                                         className="border border-gray-300 rounded-l-full px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#AE6565]"
                                         placeholder="Promo Code"
                                     />
-                                    <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-r-full">
+                                    <button className="bg-[#a15c5c] text-white py-2 px-4 rounded-r-full hover:bg-opacity-80">
                                         &gt;
                                     </button>
                                 </div>
@@ -136,7 +136,7 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <div className="h-auto w-auto ml-6 md:ml-0 bg-white rounded-[15px] shadow-lg p-6 max-w-[810px]">
+            <div className="h-auto w-auto ml-6 md:ml-0 bg-white rounded-[15px] shadow-lg p-6 max-w-[810px] mb-12">
                 <h2 className="text-[30px] text-[#5B1616] font-bold mb-5">
                     Produits recommandés
                 </h2>
@@ -146,33 +146,33 @@ function Card() {
                         <img
                             src="images/product.png"
                             alt="Jebba"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Jebba 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Jebba 60DT</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-4 w-[150px] md:w-[200px]">
                         <img
                             src="images/product.png"
                             alt="Jebba"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Jebba 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Jebba 60DT</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-4 w-[150px] md:w-[200px]">
                         <img
                             src="images/product.png"
                             alt="Koffa"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Koffa 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Koffa 60DT</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-4 w-[150px] md:w-[200px]">
                         <img
                             src="images/product.png"
                             alt="Jebba"
-                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60"
+                            className="w-20 h-32 object-cover rounded-lg shadow-md md:w-40 md:h-60 hover:cursor-pointer"
                         />
-                        <p className="text-center text-sm font-semibold">Jebba 60DT</p>
+                        <p className="text-center text-sm font-semibold mt-2">Jebba 60DT</p>
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@ function Navbar() {
                 menuOpen ? "block" : "hidden"
             } md:flex flex-wrap justify-center text-sm md:text-navSize font-bold text-white text-center space-y-2 md:space-y-0 md:space-x-6 mt-2 md:mt-0`}>
                 <li><Link to="/" className="hover:text-gray-200 block px-3">ACCEUIL</Link></li>
-                <li><a href="#" className="hover:text-gray-200 block px-3">SUIVIE COMMANDE</a></li>
+                <li><a href="/Follow" className="hover:text-gray-200 block px-3">SUIVIE COMMANDE</a></li>
                 <li><a href="/RecommandationLook" className="hover:text-gray-200 block px-3">RECOMMENDATION LOOK</a></li>
                 <li><a href="#" className="hover:text-gray-200 block px-3">EVENEMENTS CULTURELS</a></li>
                 <li><a href="/SponsorshipPage" className="hover:text-gray-200 block px-3">PODCAST</a></li>

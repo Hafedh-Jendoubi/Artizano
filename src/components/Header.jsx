@@ -83,6 +83,14 @@ function Header() {
                                             <FaShoppingCart className="mr-2" />
                                             Mes achats
                                         </Link>
+                                        <Link 
+                                            to="/Card" 
+                                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
+                                        >
+                                            <FaShoppingCart className="mr-2" />
+                                            Panier
+                                        </Link>
                                         <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                             <FaCog className="mr-2" />
                                             Paramètres
