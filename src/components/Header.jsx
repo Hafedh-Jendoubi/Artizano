@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaShoppingCart, FaCog } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 function Header() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
@@ -81,6 +82,23 @@ function Header() {
                                             <FaShoppingCart className="mr-2" />
                                             Mes achats
                                         </Link>
+                                        <Link 
+                                            to="/Card" 
+                                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
+                                        >
+                                            <FaShoppingCart className="mr-2" />
+                                            Panier
+                                        </Link>
+                                        <Link 
+                                            to="/GetRDV" 
+                                            className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            onClick={() => setIsDropdownOpen(false)} // Close dropdown on click
+                                        >
+                                            <FaPhone className="mr-2" />
+                                            Prendre Rendez Vous
+                                        </Link>
+
                                         <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                             <FaCog className="mr-2" />
                                             Paramètres
