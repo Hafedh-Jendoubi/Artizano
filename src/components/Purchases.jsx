@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import { FaSearch } from "react-icons/fa"; // Icône de recherche
+import { useNavigate } from "react-router-dom"; 
+import { FaSearch } from "react-icons/fa";
 import look1 from "../assets/look1.png";
 import look2 from "../assets/look2.png";
 import look3 from "../assets/look3.png";
@@ -26,17 +26,17 @@ const looks = [
 const Purchases = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("Pertinence");
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   const handleExchangeClick = (look) => {
-    // Navigate to /exchange-service and pass the card data as state
+   
     navigate("/exchange-service", { state: { look } });
   };
 
   return (
     <div className="min-h-screen bg-[url('/src/assets/background.png')] bg-cover bg-center bg-fixed">
       <div className="container mx-auto px-6 py-10 flex flex-col items-center">
-        {/* Search bar and other UI elements */}
+
         <div className="relative w-[624px] h-[54px] mb-4">
           <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" />
           <input
@@ -95,7 +95,7 @@ const Purchases = () => {
               <div className="mt-3 flex flex-row w-full justify-center gap-2">
                 <button
                   className="bg-[#985F5A] text-white py-1 rounded-full w-[142px] h-[53px] text-xs hover:bg-opacity-80 transition"
-                  onClick={() => handleExchangeClick(look)} // Pass the card data
+                  onClick={() => handleExchangeClick(look)} 
                 >
                   Demande d'échange
                 </button>
