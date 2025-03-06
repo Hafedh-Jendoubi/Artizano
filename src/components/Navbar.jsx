@@ -21,7 +21,7 @@ function Navbar() {
                 <li><a href="/Follow" className="hover:text-gray-200 block px-3">SUIVIE COMMANDE</a></li>
                 <li><a href="/RecommandationLook" className="hover:text-gray-200 block px-3">RECOMMENDATION LOOK</a></li>
                 <li><a href="#" className="hover:text-gray-200 block px-3">EVENEMENTS CULTURELS</a></li>
-                <li><a href="#" className="hover:text-gray-200 block px-3">PODCAST</a></li>
+                <li><a href="/SponsorshipPage" className="hover:text-gray-200 block px-3">PODCAST</a></li>
                 <li><a href="#" className="hover:text-gray-200 block px-3">CITATION</a></li>
             </ul>
         </nav>

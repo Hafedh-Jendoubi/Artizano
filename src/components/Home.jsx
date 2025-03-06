@@ -17,14 +17,10 @@ const looks = [
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("Pertinence");
-  const [menuOpen, setMenuOpen] = useState(null); 
   const navigate = useNavigate(); 
 
   const handleButtonClick = () => {
     navigate("/WorkshpDetails");
-  };
-  const handleSponsorClick = () => {
-    navigate("/SponsorshipPage");
   };
 
   return (
@@ -51,22 +47,11 @@ const Home = () => {
       
         <div className="relative w-full max-w-4xl flex items-center justify-center">
       
-
-
-    {/* Bouton gauche */}
-<div className="absolute left-0 top-1/2 transform -translate-y-1/2 translate-x-[-150px] translate-y-[-80px] w-[80px] h-[80px] bg-[#A55F5F] rounded-full flex items-center justify-center cursor-pointer">
-  <span className="w-[30px] h-[30px]">
-    <img src="/src/assets/flecheg.png" alt="flèche gauche" className="w-full h-full object-contain"/>
-  </span>
-</div>
-
-{/* Bouton droit */}
-<div className="absolute right-[50px] top-1/2 transform -translate-y-1/2 translate-x-[150px] translate-y-[-80px] w-[80px] h-[80px] bg-[#A55F5F] rounded-full flex items-center justify-center cursor-pointer">
-  <span className="w-[30px] h-[30px]">
-    <img src="/src/assets/flechd.png" alt="flèche droite" className="w-full h-full object-contain"/>
-  </span>
-</div>
-       
+          <div className="absolute left-0 top-[calc(50%-40px)] w-[80px] h-[80px] bg-[#A55F5F] rounded-full flex items-center justify-center cursor-pointer z-50">
+            <span className="w-[30px] h-[30px]">
+              <img src={flecheg} alt="flèche gauche" className="w-full h-full object-contain" />
+            </span>
+          </div>
 
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
             <div className="flex h-[400px]">
@@ -101,7 +86,11 @@ const Home = () => {
             </div>
           </div>
 
-          
+          <div className="absolute right-0 top-[calc(50%-40px)] w-[80px] h-[80px] bg-[#A55F5F] rounded-full flex items-center justify-center cursor-pointer z-50">
+            <span className="w-[30px] h-[30px]">
+              <img src={flechd} alt="flèche droite" className="w-full h-full object-contain" />
+            </span>
+          </div>
         </div>
       </div>
 
@@ -114,22 +103,10 @@ const Home = () => {
               className="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center border border-gray-300 w-[308px] h-[490px] mx-auto relative"
             >
             
-            <div className="absolute top-3 right-3">
-                <button 
-                  className="text-gray-800 text-2xl font-bold"
-                  onClick={() => setMenuOpen(menuOpen === look.id ? null : look.id)}
-                >
+              <div className="absolute top-3 right-3">
+                <button className="text-gray-800 text-2xl font-bold">
                   ⋮
                 </button>
-                {menuOpen === look.id && (
-                  <div className="absolute top-8 right-0 bg-white shadow-md border border-gray-300 rounded-md p-2">
-                    <button className="text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-md w-full"
-                      onClick={handleSponsorClick}>
-                  
-                      Sponsoriser
-                    </button>
-                  </div>
-                )}
               </div>
 
               
