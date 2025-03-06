@@ -11,18 +11,14 @@ function GetRDV() {
         <div className="flex items-center justify-center min-h-screen bg-cover bg-center p-8 md:p-20"
         style={{ backgroundImage: "url('/images/background.jpg')" }}>
         
-        {/* Grand cadre blanc */}
         <div className="bg-white bg-opacity-85 p-20 md:p-24 rounded-lg shadow-lg w-full max-w-6xl min-h-[75vh] flex flex-col justify-center">
         
-        {/* Titre avec plus d'espacement */}
         <h2 className="text-2xl font-bold text-center text-[#5B1616] mt-[-60px] mb-12">
             Prendre rendez-vous
         </h2>
 
-        {/* Formulaire */}
         <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            {/* Date alignée horizontalement */}
             <div className="flex items-center space-x-4 w-full">
                 <label className="text-[#5B1616] font-bold w-20">Date</label>
                 <div className="border border-gray-300 p-3 rounded-2xl bg-white flex-grow">
@@ -36,10 +32,8 @@ function GetRDV() {
                 </div>
             </div>
 
-            {/* Colonne de droite : Heure et Objet en colonne avec espace entre eux */}
             <div className="flex flex-col space-y-10 w-full">
 
-                {/* Heure */}
                 <div className="flex items-center space-x-4">
                     <label className="text-[#5B1616] font-bold w-20">Heure</label>
                     <input 
@@ -50,7 +44,6 @@ function GetRDV() {
                     />
                 </div>
 
-                {/* Objet avec plus d'espace en dessous de Heure */}
                 <div className="flex items-center space-x-4">
                     <label className="text-[#5B1616] font-bold w-20">Objet</label>
                     <input 
@@ -63,7 +56,6 @@ function GetRDV() {
 
             </div>
 
-            {/* Bouton Envoyer à droite */}
             <div className="md:col-span-2 flex justify-end mt-12">
                 <button 
                     type="submit"
